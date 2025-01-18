@@ -12,7 +12,7 @@ const port = 5000;
 app.use(express.json());
 app.use(cors());
 mongoose
-  .connect("mongodb://localhost:27017/Ecommerce", { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect("mongodb://localhost:27017/Ecommerce")
   .then(() => console.log("Connected to MongoDB (Database: Ecommerce)"))
   .catch((err) => console.error("Error connecting to MongoDB:", err));
 
